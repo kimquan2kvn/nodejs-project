@@ -1,0 +1,35 @@
+{
+  "name": "cms",
+  "version": "1.0.1",
+  "description": " A Content Management System in NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CMS"
+  ],
+  "author": "Kim Quan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "bootstrap-switch": "^3.4.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.2.1",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.15.6",
+    "faker": "^4.1.0",
+    "handlebars": "^4.7.7",
+    "method-override": "^3.0.0",
+    "moment": "^2.20.1",
+    "mongoose": "^6.3.1",
+    "mongoose-url-slugs": "^1.0.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

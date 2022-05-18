@@ -1,0 +1,41 @@
+<hr>
+<hr>
+<style>
+    h1 {
+        background-color:#E7E9EB;
+        
+    }
+    #to{
+        background-color:#E7E9EB;
+        padding-left: 115px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+</style>
+
+<div class="" id="to">
+    
+
+    <hr>
+    <div class="col-sm-8">
+        <h1>Categories</h1>
+        <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each categories}}
+            <tr>
+                <td>{{_id}}</td>
+                <td>{{name}}</td>
+            </tr>
+
+            {{/each}}
+        </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<h1>Create Post</h1>
+<style>
+form {
+  background-color:#E7E9EB;
+}
+</style>
+<form action="/admin/posts/edit" method="post" class="form">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="" class="form-control" placeholder="Enter title" aria-describedby="helpId" value="{{post.title}}">
+
+    </div>
+    <div class="form-group">
+      <label for="title">Status</label>
+      <select name="status" id="" class="form-control">
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+        <option value="draft">Draft</option>
+      </select>
+    </div>
+    {{!-- <div class="form-check">
+      <label for="allowComments">
+      <input type="form-check" name="allowComments" id="allowComments" class="form-check-input" placeholder="" aria-describedby="helpId">
+        ALl Comments
+      </label>
+    </div> --}}
+
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="allowComments" id="" value="checkedValue" checked>
+        All Comments
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="body">Body</label>
+      <textarea class="form-control" name="body" id="" rows="16" cols="30" ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>

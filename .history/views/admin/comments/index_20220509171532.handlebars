@@ -1,0 +1,25 @@
+<h1>Comments</h1>
+<style>
+table {
+  background-color:#E7E9EB;
+}
+</style>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Owner</th>
+            <th>Author</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+{{#each comments}}
+<tr>
+    <td>{{id}}</td>
+    <td>{{user}}</td>
+    <td>{{d}}</td>
+</tr>
+{{/each}}
+    </tbody>
+</table>

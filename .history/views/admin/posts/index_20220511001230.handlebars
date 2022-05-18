@@ -1,0 +1,46 @@
+<br>
+<hr>
+{{> home/form-msgs}}
+<h1>ALL POSTS</h1>
+<style>
+table {
+  background-color:#E7E9EB;
+}
+</style>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Picture</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Category</th>
+      <th>ALlow Comments</th>
+      <th> <a href="/post/{{_id}}"></a>View</th>
+      <th>Date</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each posts}}
+    <tr>
+      <td>{{_id}}</td>
+      <td><img height="50" class="img-responsive" src="/uploads/{{file}}" alt=""></td>
+      <td>{{title}}</td>
+      <td>{{status}}</td>
+      <td>{{category.name}}</td>
+      <td>{{allowComments}}</td>
+      <td> <a href=""></a> </td>
+      <td>{{generateTime date "MMMM Do YYYY"}}</td>
+      <td><a href="/admin/posts/edit/{{_id}}" class="btn btn-info">Edit</a></td>
+      <td>
+        <form action="/admin/posts/{{_id}}?_method=DELETE" method="post">
+          <button type="submit" class="btn btn-danger">DELETE</button>
+        </form>
+      </td>
+
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

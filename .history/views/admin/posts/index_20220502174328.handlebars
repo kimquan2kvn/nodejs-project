@@ -1,0 +1,26 @@
+<h1>ALL POSTS</h1>
+<style>
+table {
+  background-color:#E7E9EB;
+}
+</style>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>ALlow Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+ {{#each posts}}
+<tr>
+<td>{{1}}</td>
+<td>{{title}}</td>
+<td>{{status]}</td>
+<td>{{allowComments}}</td>
+</tr>
+{{/each}}
+  </tbody>
+</table>
